@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Video Player</title>
+</head>
+<body>
+  <div class="container">
+    <div class="video-container">
+      <video id="video" src="./trailer.mp4"></video>
+      <h1 class="title">Sintel - Tr&aacute;iler</h1>
+      <div class="actions">
+        <button id="play"   class="action-button"></button>
+        <button id="rewind" class="action-button hidden-button"></button>
+        <button id="pause"  class="action-button hidden-button"></button>
+        <button id="foward" class="action-button hidden-button"></button>
+      </div>
+      <input type="range" id="progress" value="0">
+    </div>
+  </div>
+  <script src="./js/indes.js"></script>
+</body>
+</html>

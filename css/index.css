@@ -1,0 +1,106 @@
+:root {
+  --Primary: #43DDE6;
+  --White: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--White);
+  background-color: var(--Primary);
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin: 7% 0;
+}
+
+.video-container {
+  margin: auto;
+  position: relative;
+  max-width: 1080px;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 2%; 
+}
+
+.actions {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-container > .actions,  .video-container > #progress{
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.video-container:hover > .actions,  .video-container:hover > #progress{
+  opacity: 1;
+}
+
+button {
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+
+#play {
+  background-image: url('/icons/icons8-circled_play\ 1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#rewind {
+  background-image: url('/icons/icons8-reset\ 2.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pause {
+  background-image: url('/icons/icons8-pause_button\ 1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#foward {
+  background-image: url('/icons/icons8-reset\ 1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.action-button {
+  cursor: pointer;
+}
+
+.action-button:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+.hidden-button {
+  display: none;
+}
+
+video {
+  inline-size: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  /* width: 60vw; */
+  /* height: 40vw; */
+}
+
